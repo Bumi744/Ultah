@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selamat Ulang Tahun</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="slide" id="slide1">
+    <div class="cake-container">
+      <div class="cake">
+        <div class="layer layer1"></div>
+        <div class="layer layer2"></div>
+        <div class="layer layer3"></div>
+        <div class="candle"></div>
+      </div>
+    </div>
+    <h1>Selamat Ulang Tahun!</h1>
+    <button onclick="nextSlide()">Lihat Pesan Spesial</button>
+  </section>
+
+  <section class="slide" id="slide2" style="display:none;">
+    <img src="foto.jpg" class="photo" alt="Foto Spesial">
+    <div class="card">
+      <h2>Pesan Spesial</h2>
+      <p>Semoga di usia baru ini kamu selalu bahagia, sehat, dan segala impianmu tercapai. Love you!</p>
+      <button onclick="prevSlide()">Kembali ke Kue</button>
+    </div>
+  </section>
+
+  <script>
+    function nextSlide() {
+      document.getElementById('slide1').style.display = 'none';
+      document.getElementById('slide2').style.display = 'block';
+    }
+
+    function prevSlide() {
+      document.getElementById('slide2').style.display = 'none';
+      document.getElementById('slide1').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
