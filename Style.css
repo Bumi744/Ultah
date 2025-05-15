@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #ffecf2;
+  text-align: center;
+}
+
+.slide {
+  padding: 40px 20px;
+}
+
+.cake-container {
+  margin: 30px auto;
+  animation: float 3s ease-in-out infinite;
+}
+
+.cake {
+  width: 150px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.layer {
+  height: 40px;
+  background: #ff99cc;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.layer1 { width: 100%; }
+.layer2 { width: 85%; margin: 0 auto 5px auto; }
+.layer3 { width: 70%; margin: 0 auto 5px auto; }
+
+.candle {
+  width: 10px;
+  height: 30px;
+  background: #fff;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: candle-flicker 1s infinite alternate;
+}
+
+@keyframes candle-flicker {
+  0% { background: #fff700; }
+  100% { background: #ff3300; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  max-width: 400px;
+}
+
+.photo {
+  max-width: 200px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
